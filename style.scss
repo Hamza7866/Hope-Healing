@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+
+}
+body{   
+     font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
+   
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#007cbac5 ;
+    color: #fff;
+    min-height: 10vh;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 24px;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+li a:hover {
+    background-color: #fff;
+    color: #007cbac5;
+    border-radius: 20px;
+    text-decoration: overline;
+}
+
+.main-sec{
+    background: linear-gradient(#355f72d3,#05273893,#010f16e5) ,url('./img/main.jpg') center center/cover;
+    color: #fff;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big-text{
+    color: rgb(226, 226, 226);
+    font-size: 4rem;
+    line-height: 1.2em;
+    text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4);
+    background: rgba(66, 103, 121, 0.603);
+    width: 90%;
+    margin:  2rem auto;
+
+}
+.small-text{
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    line-height: 1.2em;
+    text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4);
+    background: rgba(66, 103, 121, 0.637);
+    margin: 1rem 0rem;
+    width: 90%;
+    margin: auto;
+
+}
+.sev{
+    min-height: 80vh;
+    background: linear-gradient(#32647ce7,#355f72d3);
+    color: #fff;
+    
+    img{
+        width: 300px;
+        height: 300px;
+        margin-top: 1rem;
+    }
+    h1{
+        background-color:#007cbac5;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 5vh;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .container-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 40rem;
+    
+    }
+    
+
+}
+
+.about{
+    background: linear-gradient(#32647ce7,#355f72d3);
+    color: #fff;
+    min-height: 80vh;
+    h1{
+        background-color:#007cbac5;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 5vh;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    p{
+        font-size: 2rem;
+        padding: 1rem;
+        width: 80%;
+        background: rgb(66, 103, 121);
+        margin: 2rem auto;
+        
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 400px;
+        height: 300px;
+    }
+}
+.contact{
+
+
+    h1{
+        background-color:#007cbac5;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 5vh;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+   img{
+       width: 100%;
+     
+   }
+}
+
+footer{
+    min-height: 10vh;
+    background-color:#007cbac5;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    P{
+        font-size: 2.5rem;
+    }
+
+    a{
+      
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+       
+    }
+  
+    i{
+        font-size: 3rem;
+        margin: 1rem;
+        cursor: pointer;
+       
+        
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.ham{
+    display: none;
+}
+ 
+
+@media only screen and (max-width: 790px){
+  nav{
+      display: none;
+  }
+  .ham{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            i{
+                padding: 1rem;
+                color: #fff;
+                font-size: 4rem;
+                cursor: pointer;
+                
+            }
+        }
+        .navbar-troggle{
+                    min-height: 30rem;
+                    display: none;
+                   display: flex;
+                   flex-direction: column;
+                   ul{
+                       display: flex;
+                       flex-direction: column;
+                   }
+                }
+                .big-text{
+                            width: 90%;
+                            margin: auto;
+                        }
+                        .small-text{
+                            width: 90%;
+                            margin: 2rem auto;
+                        }
+
+                        footer{
+                            p{
+                                padding: 1rem;
+                            }
+                        }
+}
